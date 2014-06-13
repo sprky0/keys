@@ -38,13 +38,15 @@ define("keycodes",[],function(){
 	 * This is a little funky due to mac/windows differences
 	 */
 	function getKeyNameByCode(code) {
+
   	for( var prop in base ) {
-      if(base.hasOwnProperty( prop ) ) {
+      if(base.hasOwnProperty( prop ) && base[prop] == code) {
         return prop.toLowerCase();
-      } else {
-				return false;
-			}
+      }
   	}
+
+		return false;
+
 	}
 
 	return {
