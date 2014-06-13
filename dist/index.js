@@ -39,11 +39,11 @@ define("keycodes",[],function(){
 	 */
 	function getKeyNameByCode(code) {
 
-  	for( var prop in base ) {
-      if(base.hasOwnProperty( prop ) && base[prop] == code) {
-        return prop.toLowerCase();
-      }
-  	}
+	for( var prop in base ) {
+		if(base.hasOwnProperty( prop ) && base[prop] == code) {
+			return prop.toLowerCase();
+		}
+	}
 
 		return false;
 
