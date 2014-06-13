@@ -9,7 +9,7 @@ module.exports = function(grunt) {
 		copy : {
 			main : {
 				src : "src/keys.js",
-				dest : "dist/keys.js"
+				dest : "dist/index.js"
 			}
 		},
 		uglify : {
