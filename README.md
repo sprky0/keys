@@ -24,7 +24,7 @@ Returns the keyCode of the supplied string Name.
 
 ### method getName(integer keyCode)
 
-Returns the first matched name of the supplied integer keyCode.
+Returns the first matched name of the supplied integer keyCode.  This can be problematic between say 'command' and the 'windows key'.
 
 ### object keys
 
@@ -61,7 +61,6 @@ require('jquery','keycodes',function($,k){
 ## Keyboard Layouts
 
 :(
-
 
 ## License
 

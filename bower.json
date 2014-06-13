@@ -18,11 +18,11 @@
   "license": "MIT",
   "ignore": [
     "**/.*",
-    "node_modules",
     "bower_components",
     "test",
     "tests",
-    "build/test/public/vendor"
+    "build",
+    "src"
   ],
   "devDependencies": {
     "jquery": "~2.1.1",
