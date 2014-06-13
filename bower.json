@@ -1,0 +1,23 @@
+{
+  "name": "keys",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sprky0/keys",
+  "authors": [
+    "sprky0 <avery@averyisgreat.com>"
+  ],
+  "description": "browser keycode helper",
+  "main": "dist/index.min.js",
+  "keywords": [
+    "keycodes",
+    "browser"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
