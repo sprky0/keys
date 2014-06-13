@@ -2,10 +2,14 @@
   "name": "keys",
   "version": "0.1.0",
   "homepage": "https://github.com/sprky0/keys",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sprky0/keys.git"
+  },
   "authors": [
     "sprky0 <avery@averyisgreat.com>"
   ],
-  "description": "browser keycode helper",
+  "description": "Javascript keycode helper module",
   "main": "dist/index.min.js",
   "keywords": [
     "keycodes",
