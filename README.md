@@ -4,24 +4,50 @@ AMD module to provide provides an object with commonly used keycodes.
 
 ## Usage
 
+Map path for require.js, load as normal:
+
+```javascript
+require.config({
+	paths : {
+		'keycodes' : 'vendor/keys/dist/index'
+	}
+});
+
+require('keycodes',function($,k){
+	console.log(k.keys);
+});
+```
+
+### method getCode(string Name)
+
+Returns the keyCode of the supplied string Name.
+
+### method getName(integer keyCode)
+
+Returns the first matched name of the supplied integer keyCode.
+
+### object keys
+
 Hey i'm no mind reader, but probably you'll want to do something like the following, with a little jQuery and a little bindy thing:
 
 ```javascript
 require('jquery','keycodes',function($,k){
 
+	var keys = k.keys;
+
 	$(document).on("keyup",function(e){
 
 		switch(e.keyCode) {
 
-		case k.ENTER:
+			case keys.ENTER:
 				console.log("ok!");
 				break;
 
-			case k.ESCAPE:
+			case keys.ESCAPE:
 				console.log("cancel that thing!");
 				break;
 
-			case k.A:
+			case keys.A:
 				console.log("you hit 'A'!");
 				break;
 
